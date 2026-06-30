@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="11.1.1.61.43"
+          id="RangePagingDC" Package="model.rangePaging"
+          BeanClass="model.rangePaging.RangePagingDC" isJavaBased="true">
+  <Attribute Name="listSize" Type="int"/>
+  <AccessorAttribute id="list" IsCollection="true" BeanClass="model.SampleData"
+                     CollectionBeanClass="UpdateableCollection"/>
+  <MethodAccessor IsCollection="true" Type="model.SampleData"
+                  BeanClass="model.SampleData" id="getList"
+                  ReturnNodeName="SampleData"
+                  CollectionBeanClass="UpdateableCollection">
+    <ParameterInfo id="index" Type="int" isStructured="false"/>
+    <ParameterInfo id="size" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <ConstructorMethod IsCollection="true" Type="model.rangePaging.RangePagingDC"
+                     BeanClass="model.rangePaging.RangePagingDC"
+                     id="RangePagingDC"/>
+</JavaBean>

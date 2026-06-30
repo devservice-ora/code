@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="11.1.1.61.43" id="DefaultPagingDC" Package="model" BeanClass="model.DefaultPagingDC" isJavaBased="true">
+  <Attribute Name="listSize" Type="int"/>
+  <AccessorAttribute id="list" IsCollection="true" BeanClass="model.SampleData" CollectionBeanClass="UpdateableCollection"/>
+  <MethodAccessor IsCollection="true" Type="model.SampleData" BeanClass="model.SampleData" id="getList" ReturnNodeName="SampleData" CollectionBeanClass="UpdateableCollection">
+    <ParameterInfo id="index" Type="int" isStructured="false"/>
+    <ParameterInfo id="size" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="changeListSize" ReturnNodeName="Return">
+    <ParameterInfo id="size" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <ConstructorMethod IsCollection="true" Type="model.DefaultPagingDC" BeanClass="model.DefaultPagingDC" id="DefaultPagingDC">
+    <ParameterInfo id="listSize" Type="int" isStructured="false"/>
+  </ConstructorMethod>
+  <ConstructorMethod IsCollection="true" Type="model.DefaultPagingDC" BeanClass="model.DefaultPagingDC" id="DefaultPagingDC"/>
+</JavaBean>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<DataControlConfigs xmlns="http://xmlns.oracle.com/adfm/configuration"
+                    version="11.1.1.61.43" id="DataControls" Package="model">
+  <AdapterDataControl id="RangePagingDC"
+                      FactoryClass="model.rangePaging.CustomRangePagingFactoryImpl"
+                      ImplDef="model.CustomDefinition"
+                      SupportsTransactions="false" SupportsSortCollection="true"
+                      SupportsResetState="false" SupportsRangesize="false"
+                      SupportsFindMode="false" SupportsUpdates="true"
+                      Definition="model.rangePaging.RangePagingDC"
+                      BeanClass="model.rangePaging.RangePagingDC"
+                      xmlns="http://xmlns.oracle.com/adfm/datacontrol">
+    <CreatableTypes>
+      <TypeInfo FullName="model.SampleData"/>
+      <TypeInfo FullName="model.rangePaging.RangePagingDC"/>
+    </CreatableTypes>
+    <Source>
+      <bean-definition BeanClass="model.rangePaging.RangePagingDC"
+                       DataControlHandler="oracle.adf.model.adapter.bean.provider.RangePagingHandler"
+                       xmlns="http://xmlns.oracle.com/adfm/adapter/bean"/>
+    </Source>
+  </AdapterDataControl>
+  <AdapterDataControl id="DefaultPagingDC"
+                      FactoryClass="oracle.adf.model.adapter.DataControlFactoryImpl"
+                      ImplDef="oracle.adf.model.adapter.bean.BeanDefinition"
+                      SupportsTransactions="false" SupportsSortCollection="true"
+                      SupportsResetState="false" SupportsRangesize="false"
+                      SupportsFindMode="false" SupportsUpdates="true"
+                      Definition="model.DefaultPagingDC"
+                      BeanClass="model.DefaultPagingDC"
+                      xmlns="http://xmlns.oracle.com/adfm/datacontrol">
+    <CreatableTypes>
+      <TypeInfo FullName="model.SampleData"/>
+      <TypeInfo FullName="model.DefaultPagingDC"/>
+    </CreatableTypes>
+    <Source>
+      <bean-definition BeanClass="model.DefaultPagingDC"
+                       DataControlHandler="oracle.adf.model.adapter.bean.provider.DefaultPagingHandler"
+                       xmlns="http://xmlns.oracle.com/adfm/adapter/bean"/>
+    </Source>
+  </AdapterDataControl>
+  <AdapterDataControl id="ordinaryDC"
+                      FactoryClass="oracle.adf.model.adapter.DataControlFactoryImpl"
+                      ImplDef="oracle.adf.model.adapter.bean.BeanDefinition"
+                      SupportsTransactions="false" SupportsSortCollection="true"
+                      SupportsResetState="false" SupportsRangesize="false"
+                      SupportsFindMode="false" SupportsUpdates="true"
+                      Definition="model.rangePaging.RangePagingDC"
+                      BeanClass="model.rangePaging.RangePagingDC"
+                      xmlns="http://xmlns.oracle.com/adfm/datacontrol">
+    <CreatableTypes>
+      <TypeInfo FullName="model.SampleData"/>
+      <TypeInfo FullName="model.rangePaging.RangePagingDC"/>
+    </CreatableTypes>
+    <Source>
+      <bean-definition BeanClass="model.rangePaging.RangePagingDC"
+                       DataControlHandler="oracle.adf.model.adapter.bean.DataFilterHandler"
+                       xmlns="http://xmlns.oracle.com/adfm/adapter/bean"/>
+    </Source>
+  </AdapterDataControl>
+</DataControlConfigs>
