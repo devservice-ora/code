@@ -1,11 +1,16 @@
+/**
+ * Author: Jim Pham
+ * Description: Demo basic linkedlist
+ * Course: CS-124 Data Structures
+ * Date: 6/29/2026
+ */
 #include <string>
 #include <iostream>
 #include "linkedlist.h"
 
 using namespace std;
 
-int main()
-{
+int main() {
     LinkedList names;
 
     names.insert("Admin");
@@ -30,22 +35,18 @@ int main()
     names.erase(pos);
 
     // Print all values
-
-    for (pos = names.begin(); !pos.equals(names.end()); pos.next())
-    {
+    for (pos = names.begin(); !pos.equals(names.end()); pos.next())  {
         cout << pos.get() << endl;
     }
 
     // Now access using index
-    for (int i = 0; i < 4; i++)
-    {
+    for (int i = 0; i < 4; i++) {
         cout << i << ": " << names.get(i) << endl;
     }
     names.erase(names.begin());
     // Now access using index
     cout << "After deleting first element" << endl;
-    for (int i = 0; i < 3; i++)
-    {
+    for (int i = 0; i < 3; i++) {
         cout << i << ": " << names.get(i) << endl;
     }
     Iterator iter = names.begin();
@@ -53,8 +54,7 @@ int main()
     iter.next();
     names.erase(iter);
     cout << "After deleting last element" << endl;
-    for (int i = 0; i < 2; i++)
-    {
+    for (int i = 0; i < 2; i++) {
         cout << i << endl;
         cout << i << ": " << names.get(i) << endl;
     }
