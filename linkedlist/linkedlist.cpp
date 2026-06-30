@@ -1,3 +1,9 @@
+/**
+ * Author: Jim Pham
+ * Description: Demo basic linkedlist
+ * Course: CS-124 Data Structures
+ * Date: 6/29/2026
+ */
 #include <string>
 #include "linkedlist.h"
 
