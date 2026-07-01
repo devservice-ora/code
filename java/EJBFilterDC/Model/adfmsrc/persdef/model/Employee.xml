@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE PDefViewObject SYSTEM "jbo_03_01.dtd">
+<!---->
+<PDefViewObject
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="Employee"
+  Version="12.2.1.16.48">
+  <DesignTime>
+    <Attr Name="_DCName" Value="model.DataControls.SessionEJBBean"/>
+    <Attr Name="_SDName" Value="model.Employee"/>
+  </DesignTime>
+  <PDefAttribute
+    Name="department1"
+    IsUpdateable="true"
+    LOVName="LOV_department1">
+    <DesignTime>
+      <Attr Name="_accessorAttribute" Value="true"/>
+    </DesignTime>
+    <Properties>
+      <SchemaBasedProperties>
+        <CONTROLTYPE
+          Value="choice"/>
+        <LABEL
+          ResId="${adfBundle['model.ModelBundle']['model.Employee.department1_LABEL']}"/>
+      </SchemaBasedProperties>
+    </Properties>
+  </PDefAttribute>
+  <ViewAccessor
+    Name="LOVAccessor_departmentFindAll1"
+    ViewInstanceName="datacontrol.departmentFindAll"
+    RowLevelBinds="true"
+    RangeSize="10"/>
+  <ListBinding
+    Name="LOV_department1"
+    ListVOName="LOVAccessor_departmentFindAll1"
+    MRUCount="0"
+    NullValueFlag="start"
+    NullValueId="${adfBundle['oracle.javatools.resourcebundle.SystemBundle']['NULL_VALUE_RESID']}">
+    <AttrArray Name="AttrNames">
+      <Item Value="department1"/>
+    </AttrArray>
+    <AttrArray Name="AttrExpressions"/>
+    <AttrArray Name="ListAttrNames">
+      <Item Value="dataProvider"/>
+    </AttrArray>
+    <AttrArray Name="ListDisplayAttrNames">
+      <Item Value="departmentName"/>
+    </AttrArray>
+    <DisplayCriteria/>
+  </ListBinding>
+</PDefViewObject>
