@@ -1,6 +1,6 @@
-# Multi-Language Programming Reference & Repository Index 
+# Multi-Language Programming Reference 
 
-A centralized hub indexing core concepts, syntax baselines, and architectural paradigms across C++, Java, Python, and JavaScript, along with localized project templates.
+A centralized indexing center stores programming concepts, syntax standards, and architectural models across C++, Java, Python, and JavaScript, along with localized examples and project templates compiled by **[Jim D. Pham](https://github.com/devservice-ora/AI/blob/main/My%20Professional%20Portfolio.md)**.
 
 ---
 
