@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Jim D. Pham | Technology & Learning Specialist</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Bridging Computer Science Pedagogy & Enterprise Engineering. Executive consulting, academic coaching, TOTS model, Agentic AI, and cloud-native software architecture by Dr. Jim D. Pham.">
+    <meta name="keywords"
+        content="Dr. Jim D. Pham, Computer Science Education, Enterprise Engineering, Train of Thought Synthesis, TOTS Model, Agentic AI, Cloud Software Architecture, Academic Coaching">
+    <meta name="author" content="Dr. Jim D. Pham">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Dr. Jim D. Pham | Technology & Learning Specialist">
+    <meta property="og:description"
+        content="Bridging Computer Science Pedagogy & Enterprise Engineering through personalized coaching, TOTS model, and autonomous workflows.">
+    <meta property="og:image" content="images/jim-pham.jpg">
+    <meta property="og:url" content="http://www.totsllc.com/">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Dr. Jim D. Pham | Technology & Learning Specialist">
+    <meta name="twitter:description"
+        content="Bridging Computer Science Pedagogy & Enterprise Engineering through personalized coaching, TOTS model, and autonomous workflows.">
+    <meta name="twitter:image" content="images/jim-pham.jpg">
+
+    <link rel="icon" type="image/png" href="images/jim-pham-32.png">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <script src="js/nav.js" defer></script>
+    <script src="js/contact.js" defer></script>
+</head>
+
+<body>
+
+    <div class="app-layout">
+        <!-- SHARED SIDEBAR CONTAINER -->
+        <div id="sidebar-container"></div>
+
+        <!-- MAIN CONTENT AREA -->
+        <main class="main-content">
+            <section id="contact">
+                <div class="section-title">
+                    <h2>Contact Us</h2>
+                    <p>Let's collaborate on transforming learning environments and engineering workflows.</p>
+                </div>
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <h3>Get in Touch</h3>
+                        <p style="margin-bottom: 2rem;">Reach out to discuss academic consulting, keynotes, curriculum
+                            modernization, or engineering advisory.</p>
+
+                        <div class="info-item">
+                            <strong>Location</strong>
+                            <p>San Jose, California</p>
+                        </div>
+                        <div class="info-item">
+                            <strong>Email Address</strong>
+                            <p><a href="mailto:jim.pham@totsllc.com" class="inline-link">jim.pham@totsllc.com</a></p>
+                        </div>
+                        <div class="info-item">
+                            <strong>Phone</strong>
+                            <p>(408) 623-5211</p>
+                        </div>
+                        <div class="info-item">
+                            <strong>Professional & Academic Profiles</strong>
+                            <p>
+                                <a href="https://www.linkedin.com/in/jim-pham-b25659" target="_blank"
+                                    rel="noopener noreferrer" class="inline-link">LinkedIn</a> |
+                                <a href="https://github.com/devservice-ora/AI/blob/main/My%20Professional%20Portfolio.md"
+                                    target="_blank" rel="noopener noreferrer" class="inline-link">GitHub</a> |
+                                <a href="https://www.credly.com/users/jim-pham.2880ca8e" target="_blank"
+                                    rel="noopener noreferrer" class="inline-link">Credly Badges</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="contact-form">
+                        <!-- ACCESSIBLE FEEDBACK STATUS BANNER -->
+                        <div id="form-response-message" class="status-banner" role="status" aria-live="polite" hidden>
+                        </div>
+
+                        <!-- Updated to route directly to the CGI script endpoint -->
+                        <form id="contact-form" action="api/contact.php" method="POST">
+                            <div class="form-group">
+                                <input type="text" name="sender-name" placeholder="Your Name or Organization" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="sender-email" placeholder="Your Email Address" required>
+                            </div>
+                            <div class="form-group">
+                                <select name="consulting-topic" required>
+                                    <option value="" disabled selected>Select Consulting Topic</option>
+                                    <option value="pedagogy">TOTS Model & Educational Pedagogy</option>
+                                    <option value="curriculum">Computer Science / AI Curriculum Design</option>
+                                    <option value="architecture">Software Architecture & Data Pipelines</option>
+                                    <option value="speaking">Keynote / STEM Mentorship Program</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <textarea name="message-body"
+                                    placeholder="Describe your institutional needs or consultation goals..."
+                                    required></textarea>
+                            </div>
+                            <button type="submit" id="submit-btn" class="submit-btn">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="main-footer">
+                <p>&copy; 2026 Dr. Jim D. Pham. All Rights Reserved. | San Jose, California</p>
+            </footer>
+        </main>
+    </div>
+
+</body>
+
+</html>
